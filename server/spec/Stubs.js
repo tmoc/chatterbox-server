@@ -13,9 +13,11 @@ module.exports = {
       self._headers = headers;
     };
     this.end = function(data) {
+      debugger;
       console.log('Response.end called.');
       self._ended = true;
       self._data = data;
+      console.log(self._data);
     };
   },
 
